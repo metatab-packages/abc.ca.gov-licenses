@@ -1,0 +1,61 @@
+Declare,metatab-latest
+Title,California Alcohol Licenses
+Description,"Records of alcohol licenses in california, from the CA ABC daily file, with improvements to geographic identifiers. "
+Identifier,175c0da3-114c-47f2-bdbb-af2f2959c13d
+Name,abc.ca.gov-licenses-1.1.1
+Dataset,licenses
+Origin,abc.ca.gov
+Time,
+Space,
+Grain,
+Variant,
+Version,1.1.1
+Version.Major,1
+Version.Minor,1
+Version.Patch,1
+Created,2020-11-26T17:04:57
+Modified,2020-11-26T19:23:48
+Giturl,https://github.com/metatab-packages/crime-sandiego-collection.git
+
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+
+Section,Documentation,Title,Description,
+Documentation,file:README.md,README,,
+
+Section,References,Name,Description,
+Reference,https://www.abc.ca.gov/wp-content/uploads/WeeklyExport_CSV.zip#*.csv&start=2&headers=1,abc_licenses_source,Raw ABC data,
+
+Section,Resources,Name,Description,
+Datafile,notebooks/Process.ipynb#df,ca_abc_licenses,California Alcohol Beverage Control Licenses,
+
+Section,Schema,DataType,Description,,
+Table,ca_abc_licenses,,,,
+Table.Column,license_type,integer,,,
+Table.Column,file_number,integer,,,
+Table.Column,lic_or_app,string,,,
+Table.Column,type_status,string,,,
+Table.Column,type_orig_iss_date,string,,,
+Table.Column,expir_date,string,,,
+Table.Column,fee_codes,string,,,
+Table.Column,dup_counts,string,,,
+Table.Column,master_ind,string,,,
+Table.Column,term_in_of_months,integer,,,
+Table.Column,geo_code,integer,,,
+Table.Column,district,integer,,,
+Table.Column,primary_name,text,,,
+Table.Column,prem_addr_1,string,,,
+Table.Column,prem_addr_2,string,,,
+Table.Column,prem_city,string,,,
+Table.Column,prem_state,string,,,
+Table.Column,prem_zip,string,,,
+Table.Column,dba_name,text,,,
+Table.Column,mail_addr_1,string,,,
+Table.Column,mail_addr_2,string,,,
+Table.Column,mail_city,string,,,
+Table.Column,mail_state,string,,,
+Table.Column,mail_zip,string,,,
+Table.Column,prem_county,string,,,
+Table.Column,prem_census_tract,string,,,
+Table.Column,county,integer,County FIPS code,,
+Table.Column,tract,string,Tract Geoid,,
